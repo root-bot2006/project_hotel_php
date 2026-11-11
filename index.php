@@ -38,7 +38,7 @@ $chambres = mysqli_query($conn, "SELECT * FROM chambres");
         <h3>Informations du client</h3>
         Nom : <input type="text" name="nom" required><br><br>
         Prénom : <input type="text" name="prenom" required><br><br>
-        Téléphone : <input type="number" name="telephone" required><br><br>
+        Téléphone : <input type="tel" name="telephone" required><br><br>
         Email : <input type="email" name="email"><br><br>
 
         <h3>Choix de la chambre</h3>
@@ -60,7 +60,6 @@ $chambres = mysqli_query($conn, "SELECT * FROM chambres");
     </form>
     
     <br>
-
     <a href="lire.php">Voir la liste des réservations / clients</a>
 </body>
 </html>
