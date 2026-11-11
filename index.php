@@ -1,6 +1,6 @@
 
 <?php
-include "connexion.php";
+require "connexion.php";
 
 if (isset($_POST['valider'])) {
     $nom = mysqli_real_escape_string($conn, $_POST['nom']);
@@ -38,7 +38,7 @@ $chambres = mysqli_query($conn, "SELECT * FROM chambres");
         <h3>Informations du client</h3>
         Nom : <input type="text" name="nom" required><br><br>
         Prénom : <input type="text" name="prenom" required><br><br>
-        Téléphone : <input type="text" name="telephone"><br><br>
+        Téléphone : <input type="number" name="telephone" required><br><br>
         Email : <input type="email" name="email"><br><br>
 
         <h3>Choix de la chambre</h3>

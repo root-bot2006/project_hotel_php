@@ -1,5 +1,5 @@
 <?php
-include "connexion.php";
+require "connexion.php";
 $query = "SELECT r.id_reservation, c.nom, c.prenom, c.telephone, c.email, 
                  ch.numero, ch.type_chambre, ch.prix, r.date_arrivee, r.date_depart 
           FROM reservations r

@@ -1,5 +1,5 @@
 <?php
-include "connexion.php";
+require "connexion.php";
 ?>
 <?php
 include "connexion.php";

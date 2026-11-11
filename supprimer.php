@@ -1,5 +1,5 @@
 <?php
-   include "connexion.php";
+   require "connexion.php";
 
 if (isset($_POST['id_client'])) {
     $id = (int) $_POST['id_client'];
