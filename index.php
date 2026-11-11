@@ -60,7 +60,7 @@ $chambres = mysqli_query($conn, "SELECT * FROM chambres");
     </form>
     
     <br>
-    <!-- Lien pour aller voir la liste directement depuis l'accueil -->
+
     <a href="lire.php">Voir la liste des réservations / clients</a>
 </body>
 </html>
